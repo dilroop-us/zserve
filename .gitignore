@@ -1,0 +1,18 @@
+@'
+# Zig build artifacts
+.zig-cache/
+zig-cache/
+zig-out/
+*.o
+*.obj
+*.pdb
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+'@ | Set-Content -Encoding UTF8 .gitignore
