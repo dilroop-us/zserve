@@ -1,7 +1,6 @@
 const std = @import("std");
 const http = @import("http.zig");
 
-// function pointer type; handlers receive a Request
 pub const Handler = *const fn (*std.net.Stream, http.Request) anyerror!void;
 
 pub const Route = struct {
